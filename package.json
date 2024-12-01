@@ -1,0 +1,50 @@
+{
+  "name": "test-fill-form",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "rm -rf ./dist && pnpm run build && node dist/index.js",
+    "replay": "rm -rf ./dist && pnpm run build && node dist/replay.js",
+    "pref": "rm -rf ./dist && pnpm run build && node dist/pref.js",
+    "pref-consumer": "rm -rf ./dist && pnpm run build && node dist/pref-consumer.js",
+    "consumer": "node dist/consumer.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@langchain/core": "^0.2.27",
+    "@langchain/langgraph": "^0.0.34",
+    "@langchain/openai": "^0.2.7",
+    "@mozilla/readability": "^0.5.0",
+    "diff": "^5.2.0",
+    "express": "^4.19.2",
+    "jquery": "^3.7.1",
+    "jsdom": "^24.1.1",
+    "langchain": "^0.2.16",
+    "langfuse": "^3.19.0",
+    "langfuse-langchain": "^3.19.0",
+    "replai": "file:../replai",
+    "openai": "^4.55.7",
+    "pdf-parse": "^1.1.1",
+    "puppeteer": "^23.0.2",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7",
+    "string-similarity-js": "^2.1.4",
+    "unsure-js": "^1.2.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.4.2",
+    "@types/pdf-parse": "^1.1.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "prettier": "^3.3.3",
+    "tailwindcss": "^3.4.13",
+    "typescript": "^5.5.4"
+  }
+}
